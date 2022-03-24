@@ -1,0 +1,84 @@
+immortality = {
+	index = 725
+
+	immortal = yes
+	health = 10
+	no_prowess_loss_from_age = yes
+
+	diplomacy = 100
+	martial = 100
+	stewardship = 100
+	intrigue = 100
+	learning = 100
+	prowess = 100
+
+	monthly_income = 10
+	monthly_dread = 100
+	monthly_tyranny = -100
+
+	domain_limit = 100
+	vassal_limit = 100
+	knight_limit = 100
+
+	general_opinion = 1000
+	monthly_county_control_change_add_even_if_baron = 100
+
+	men_at_arms_limit = 50
+	men_at_arms_cap = 50
+
+	scheme_power = 1000
+	scheme_resistance = 1000
+	scheme_secrecy = 1000
+	scheme_success_chance = 1000
+	stress_gain_mult = -10
+
+	advantage = 100
+	levy_reinforcement_rate = 100
+	mercenary_hire_cost_mult = -1
+	army_maintenance_mult = -1
+	siege_phase_time = -1000
+	siege_morale_loss = 1000
+	movement_speed = 1000
+	naval_movement_speed_mult = 1000
+	hard_casualty_modifier = -10
+	enemy_hard_casualty_modifier = 10
+	supply_duration = 100
+	supply_limit_mult = 10
+	supply_capacity_mult = 10
+	hard_casualty_modifier = -1	#% Friendly Fatal Casualties
+	retreat_losses = -1					#% Retreat Losses
+	no_water_crossing_penalty = yes
+	enemy_terrain_advantage = -1
+	raid_speed = 10
+	min_combat_roll = 20
+	max_combat_roll = 40
+	siege_weapon_max_size_mult = 3
+	hostile_county_attrition = -1
+
+	supply_limit = 100
+
+	build_speed = -1000
+
+	ai_energy = 200
+	ai_rationality = -200
+	ai_vengefulness = 200
+	ai_greed = -200
+	ai_zeal = 100
+	ai_war_chance = 100
+	ai_war_cooldown = -365
+	
+	can_have_children = no
+	birth = 0
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_immortality_desc
+			}
+			desc = trait_immortality_character_desc
+		}
+	}
+}
